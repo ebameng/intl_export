@@ -44,6 +44,8 @@ app.get('/', function (req, res) {
   res.setHeader('Content-Type', 'application/vnd.openxmlformats')
   res.setHeader('Content-Disposition', 'attachment; filename=' + 'intl_export.csv')
   res.end(result, 'binary')
+  console.log('successfully!')
+  process.exit()
 })
 
 function getStr (str, key) {
@@ -62,6 +64,9 @@ function fileDisplay (filePath) {
       files.forEach(function (filename) {
         // 获取当前文件的绝对路径
         var filedir = path.join(filePath, filename)
+        if (filedir.indexOf('node_modules') > -1) {
+          return false
+        }
         // 根据文件路径获取文件信息，返回一个fs.Stats对象
         fs.stat(filedir, function (eror, stats) {
           if (eror) {
