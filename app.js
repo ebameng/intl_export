@@ -121,7 +121,7 @@ function fileDisplay (filePath) {
 
 function getParams () {
   const argvs = process.argv || []
-  if (argvs.length > 2) {
+  if (argvs.length > 1) {
     let obj = {}
     let reg = /^(\S+)=(\S+)$/
     argvs.forEach((item, index) => {

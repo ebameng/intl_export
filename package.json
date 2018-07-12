@@ -1,6 +1,6 @@
 {
   "name": "intl_export",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "export excel which need FormattedMessage ",
   "author": "pengjinwen",
   "dependencies": {
@@ -17,5 +17,9 @@
   "keywords": [
     "intl_export", "intl", "export", "export-intl", "intl-export"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type" : "git", 
+    "url" : "https://github.com/ebameng/intl_export.git"  
+  }
 }
