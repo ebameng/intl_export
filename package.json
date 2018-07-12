@@ -1,0 +1,21 @@
+{
+  "name": "intl_export",
+  "version": "0.0.12",
+  "description": "export excel which need FormattedMessage ",
+  "author": "pengjinwen",
+  "dependencies": {
+    "excel-export": "^0.5.1",
+    "express": "4.15.2",
+    "opn": "^5.3.0"
+  },
+  "bin": {
+    "intl_export": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "intl_export"
+  },
+  "keywords": [
+    "intl_export", "intl", "export", "export-intl", "intl-export"
+  ],
+  "license": "ISC"
+}
