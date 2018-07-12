@@ -1,13 +1,13 @@
-#intl_export
+# intl_export
 when you used React-intl, maybe you need a tool to export an excel those been setted intl.
 
-###Installation:
+### Installation:
 ```javascript
 $ npm install -g intl_export
 $ cd your_project
 $ intl_export
 ```
-###Usage:
+### Usage:
 * eg.
 ```javascript 
 //a.js
@@ -17,7 +17,7 @@ let user = this.LangMessage.user || '用户'
 //c.js
 let login = this.Lang.login || '登录'
 ```
-####result: you will get an excel
+#### result: you will get an excel
 <table>
     <tr>
         <th>i18nKey</th>
@@ -37,7 +37,7 @@ let login = this.Lang.login || '登录'
     </tr>
 </table>
 
-###Other params:
+### Other params:
 * port: 自定义端口号， 默认是3000
 * dir: 自定义目录， 默认在当前执行命令目录下
 * prefix: 前缀 例如： 只想导出前缀为 a_***的， 则加上 prefix=a_
