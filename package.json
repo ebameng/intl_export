@@ -1,6 +1,6 @@
 {
   "name": "intl_export",
-  "version": "0.0.16",
+  "version": "1.1.0",
   "description": "export excel which need FormattedMessage ",
   "author": "pengjinwen",
   "dependencies": {
